@@ -6,11 +6,11 @@ TaskFlow is a fictional project-management product created as a frontend develop
 
 ## 🚀 Live Demo
 
-Coming soon — will be added after Vercel deployment.
+[View Live Website](https://taskflow-landing-page-ebon.vercel.app)
 
 ## 📸 Preview
 
-Screenshots will be added after the final deployment.
+The live project is available through the demo link above.
 
 ## ✨ Features
 
