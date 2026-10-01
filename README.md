@@ -1,75 +1,70 @@
-# React + TypeScript + Vite
+# TaskFlow — Responsive SaaS Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive SaaS-style landing page built with React, TypeScript, Bootstrap, CSS Modules, and React Icons.
 
-Currently, two official plugins are available:
+TaskFlow is a fictional project-management product created as a frontend development project to demonstrate responsive UI design, component-based architecture, accessibility, and interactive frontend functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+Coming soon — will be added after Vercel deployment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview
 
-## Expanding the ESLint configuration
+Screenshots will be added after the final deployment.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsive navbar with mobile menu
+- Active section navigation
+- Hero section with dashboard preview
+- Responsive statistics section
+- Feature cards
+- How It Works section
+- Testimonials section
+- Responsive pricing cards
+- Interactive pricing plan modal
+- FAQ accordion
+- Call-to-action section
+- Responsive footer
+- Social media links
+- Keyboard-accessible interactions
+- Visible keyboard focus states
+- Responsive design for desktop, tablet, and mobile
+- Reduced-motion support
+- SEO meta information
+- Production-ready Vite build
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Bootstrap
+- CSS Modules
+- React Icons
+- Vite
+- HTML5
+- CSS3
 
-```
+## 📂 Project Structure
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+```text
+src/
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── Stats/
+│   ├── Features/
+│   ├── HowItWorks/
+│   ├── Testimonials/
+│   ├── Pricing/
+│   ├── FAQ/
+│   ├── CTA/
+│   └── Footer/
+│
+├── App.tsx
+├── App.css
+├── main.tsx
+└── index.css
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+public/
 ```
