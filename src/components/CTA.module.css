@@ -1,0 +1,87 @@
+.section {
+  background-color: #94036b;
+  padding: 60px 0;
+}
+
+.title {
+  max-width: 850px;
+  margin: 0 auto 14px;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  color: #e7c0dc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #f4aadf;
+  color: #57013e;
+  border: 2px solid #f4aadf;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #ffffff;
+  color: #57013e;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 42px 0;
+  }
+
+  .title {
+    max-width: 450px;
+    padding: 0 10px;
+    font-size: 30px;
+  }
+
+  .description {
+    max-width: 430px;
+    padding: 0 10px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .ctaButton {
+    padding: 11px 24px;
+    font-size: 16px;
+    border-radius: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ctaButton {
+    transition: none;
+  }
+}

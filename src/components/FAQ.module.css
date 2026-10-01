@@ -1,0 +1,130 @@
+.section {
+  background-color: #94036b;
+  padding: 60px 0;
+}
+
+.title {
+  max-width: 800px;
+  margin: 0 auto 12px;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.description {
+  margin: 0 auto 40px;
+  color: #e7c0dc;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.faqAccordion {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.faqAccordion :global(.accordion-item) {
+  background-color: #6c044f;
+  color: #ffffff;
+  border: 1px solid #8f1c70;
+}
+
+.faqAccordion :global(.accordion-button) {
+  padding: 16px 20px;
+  background-color: #6c044f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.faqAccordion :global(.accordion-button:not(.collapsed)) {
+  background-color: #790759;
+  color: #f4aadf;
+  box-shadow: none;
+}
+
+.faqAccordion :global(.accordion-body) {
+  padding: 16px 20px;
+  background-color: #57013e;
+  color: #e7bbd9;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.faqAccordion :global(.accordion-button::after) {
+  filter: brightness(0) invert(1);
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    margin-bottom: 35px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .title {
+    max-width: 400px;
+    padding: 0 10px;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 28px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .faqAccordion {
+    max-width: 100%;
+  }
+
+  .faqAccordion :global(.accordion-button) {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .faqAccordion :global(.accordion-body) {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .faqAccordion :global(.accordion-button) {
+    font-size: 14px;
+  }
+
+  .faqAccordion :global(.accordion-body) {
+    font-size: 14px;
+  }
+}

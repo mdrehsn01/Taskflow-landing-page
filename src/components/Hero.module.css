@@ -1,0 +1,306 @@
+/* Hero */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  background: #95016b;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: clamp(2rem, 3.2vw, 3.7rem);
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.heroDescription {
+  max-width: 600px;
+  margin: 25px 0 35px;
+  color: #ffc7ef;
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
+  line-height: 1.7;
+}
+
+/* Buttons */
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.heroActions .primaryButton,
+.heroActions .secondaryButton {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.heroActions .primaryButton {
+  background: #f4aadf;
+  color: #470033;
+  border: 2px solid #f4aadf;
+}
+
+.heroActions .primaryButton:hover {
+  background: #fff;
+  color: #470033;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.heroActions .secondaryButton {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #f4aadf;
+}
+
+.heroActions .secondaryButton:hover {
+  background: #f4aadf;
+  color: #470033;
+  transform: translateY(-2px);
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: flex;
+  min-width: 0;
+  min-height: 350px;
+  overflow: hidden;
+  background: #600045;
+  color: #f4aadf;
+  border: 1px solid #8f1c70;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 28%;
+  gap: 16px;
+  padding: 24px 18px;
+  background: #3d002d;
+}
+
+.sidebar h2 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar span {
+  color: #dca6cc;
+  font-size: 0.95rem;
+}
+
+.dashboardContent {
+  flex: 1;
+  min-width: 0;
+  padding: 25px;
+}
+
+.dashboardContent h2 {
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Dashboard stats */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  padding: 14px;
+  background: #620046;
+  border: 1px solid #8f1c70;
+  border-radius: 10px;
+}
+
+.statsCard strong {
+  color: #f4aadf;
+  font-size: 1.5rem;
+}
+
+.statsCard span {
+  color: #dca6cc;
+  font-size: 0.85rem;
+}
+
+/* Recent projects */
+
+.recentProjects {
+  margin-top: 30px;
+}
+
+.recentProjects h3 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.projectItem {
+  margin-bottom: 22px;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #f4aadf;
+  font-size: 0.95rem;
+}
+
+.progressBar {
+  height: 8px;
+  overflow: hidden;
+  background: #3d002d;
+  border-radius: 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background: #f4aadf;
+  border-radius: inherit;
+}
+
+/* Tablet */
+
+@media (max-width: 1199px) {
+  .sidebar {
+    padding: 20px 12px;
+  }
+
+  .dashboardContent {
+    padding: 20px 15px;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .statsCard {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: auto;
+    padding: 30px 0 50px;
+  }
+
+  .heroTitle {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .heroDescription {
+    margin: 18px 0 25px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .heroActions {
+    flex-direction: column;
+  }
+
+  .heroActions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heroActions .primaryButton,
+  .heroActions .secondaryButton {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 15px;
+    padding: 16px;
+  }
+
+  .sidebar h2 {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    font-size: 1.35rem;
+  }
+
+  .sidebar span {
+    font-size: 0.8rem;
+  }
+
+  .dashboardContent {
+    padding: 20px 15px;
+  }
+
+  .dashboardContent h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .statsCard {
+    padding: 10px 7px;
+  }
+
+  .statsCard strong {
+    font-size: 1.2rem;
+  }
+
+  .statsCard span {
+    font-size: 0.75rem;
+  }
+
+  .recentProjects {
+    margin-top: 25px;
+  }
+
+  .recentProjects h3 {
+    margin-bottom: 18px;
+    font-size: 1.25rem;
+  }
+
+  .projectHeader {
+    font-size: 0.85rem;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton {
+    transition: none;
+  }
+}

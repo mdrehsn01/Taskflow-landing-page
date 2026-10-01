@@ -1,0 +1,69 @@
+.section {
+  background-color: #94036b;
+  padding: 60px 0;
+}
+
+.title {
+  margin: 0 auto 12px;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #e7c0dc;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    margin-bottom: 35px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .title {
+    max-width: 400px;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 28px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

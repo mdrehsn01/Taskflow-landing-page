@@ -1,0 +1,147 @@
+.footer {
+  background-color: #3d002d;
+  padding: 55px 0 20px;
+  color: #ffffff;
+}
+
+.brand {
+  margin-bottom: 14px;
+  color: #f4aadf;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.description {
+  max-width: 380px;
+  margin: 0 0 20px;
+  color: #dca6cc;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4aadf;
+  font-size: 22px;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.heading {
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 11px;
+  color: #dca6cc;
+  font-size: 15px;
+}
+
+.linkList a {
+  color: #dca6cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkList a:hover {
+  color: #f4aadf;
+}
+
+.divider {
+  margin: 38px 0 18px;
+  border: 0;
+  border-top: 1px solid #a34988;
+  opacity: 0.6;
+}
+
+.copyright {
+  margin: 0;
+  color: #dca6cc;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 45px 0 20px;
+  }
+
+  .brand {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 0 18px;
+  }
+
+  .brand {
+    margin-bottom: 12px;
+    font-size: 26px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .socialIcons {
+    gap: 16px;
+  }
+
+  .socialIcons a {
+    font-size: 21px;
+  }
+
+  .heading {
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+
+  .linkList li {
+    margin-bottom: 9px;
+    font-size: 14px;
+  }
+
+  .divider {
+    margin: 28px 0 16px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socialIcons a,
+  .linkList a {
+    transition: none;
+  }
+}
